@@ -1,8 +1,10 @@
+ml>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bn">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>My Digital Services</title>
 
   <style>
@@ -10,85 +12,87 @@
       box-sizing: border-box;
       margin: 0;
       padding: 0;
-      font-family: Arial, sans-serif;
     }
 
     body {
-      background: #f5f7fb;
+      font-family: Arial, sans-serif;
+      background: #f4f6fb;
       color: #222;
-      line-height: 1.6;
+      min-height: 100vh;
     }
 
     header {
-      background: #111827;
+      background: linear-gradient(135deg, #172b8f, #1269df);
       color: white;
+      padding: 35px 20px;
       text-align: center;
-      padding: 60px 20px;
     }
 
     header h1 {
-      font-size: 38px;
+      font-size: 32px;
       margin-bottom: 10px;
     }
 
     header p {
-      font-size: 18px;
-      color: #d1d5db;
+      font-size: 17px;
+      line-height: 1.6;
     }
 
     .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 40px 20px;
-    }
-
-    h2 {
-      text-align: center;
-      margin-bottom: 25px;
-    }
-
-    .services {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
+      width: 92%;
+      max-width: 700px;
+      margin: 25px auto;
     }
 
     .card {
       background: white;
-      padding: 25px;
+      padding: 22px;
+      margin-bottom: 18px;
       border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    }
+
+    .card h2 {
+      color: #173ca8;
+      margin-bottom: 12px;
+      font-size: 22px;
+    }
+
+    .card p {
+      line-height: 1.7;
+      color: #555;
+    }
+
+    .btn {
+      display: block;
       text-align: center;
-      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-    }
-
-    .card h3 {
-      margin-bottom: 10px;
-    }
-
-    .contact {
-      text-align: center;
-      margin-top: 40px;
-      background: white;
-      padding: 30px;
-      border-radius: 15px;
-    }
-
-    .button {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 12px 25px;
-      background: #2563eb;
-      color: white;
       text-decoration: none;
+      background: #1269df;
+      color: white;
+      padding: 13px;
+      border-radius: 10px;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      background: #0d52b5;
+    }
+
+    .notice {
+      background: #eaf2ff;
+      border-left: 5px solid #1269df;
+      padding: 15px;
       border-radius: 8px;
+      margin-bottom: 20px;
+      line-height: 1.6;
     }
 
     footer {
       text-align: center;
-      background: #111827;
-      color: white;
-      padding: 20px;
-      margin-top: 40px;
+      padding: 25px;
+      color: #777;
+      font-size: 14px;
     }
   </style>
 </head>
@@ -97,45 +101,62 @@
 
   <header>
     <h1>My Digital Services</h1>
-    <p>Simple • Professional • Affordable</p>
+    <p>
+      সার্ভিস নিন • রেফার করুন • বৈধ কমিশনের<br>
+      সুযোগ তৈরি করুন
+    </p>
   </header>
 
   <div class="container">
 
-    <h2>My Services</h2>
-
-    <div class="services">
-
-      <div class="card">
-        <h3>🌐 Website Design</h3>
-        <p>I can create simple and professional websites.</p>
-      </div>
-
-      <div class="card">
-        <h3>💻 HTML & CSS</h3>
-        <p>Clean and responsive web pages for your business.</p>
-      </div>
-
-      <div class="card">
-        <h3>🎨 Simple Design</h3>
-        <p>Modern layouts and attractive designs for your project.</p>
-      </div>
-
+    <div class="notice">
+      <strong>স্বাগতম!</strong><br>
+      আমাদের ডিজিটাল সার্ভিস ব্যবহার করুন এবং বন্ধুদের রেফার করে
+      বৈধ কমিশনের সুযোগ তৈরি করুন।
     </div>
 
-    <div class="contact">
-      <h2>Need a Website?</h2>
-      <p>Contact me for your next project.</p>
+    <div class="card">
+      <h2>📱 ডিজিটাল সার্ভিস</h2>
+      <p>
+        বিভিন্ন অনলাইন ও ডিজিটাল সার্ভিস সহজে ব্যবহার করার
+        সুযোগ এখানে পাওয়া যাবে।
+      </p>
 
-      <a class="button" href="mailto:your@email.com">
-        Contact Me
-      </a>
+      <a href="#" class="btn">সার্ভিস দেখুন</a>
+    </div>
+
+    <div class="card">
+      <h2>👥 রেফার প্রোগ্রাম</h2>
+      <p>
+        বন্ধুদের রেফার করুন এবং প্রযোজ্য নিয়ম ও শর্ত অনুযায়ী
+        কমিশন পাওয়ার সুযোগ নিন।
+      </p>
+
+      <a href="#" class="btn">রেফার করুন</a>
+    </div>
+
+    <div class="card">
+      <h2>💰 ব্যালেন্স</h2>
+      <p>
+        আপনার অর্জিত কমিশন ও ব্যালেন্স এখানে দেখানো হবে।
+      </p>
+
+      <a href="#" class="btn">ব্যালেন্স দেখুন</a>
+    </div>
+
+    <div class="card">
+      <h2>📞 যোগাযোগ</h2>
+      <p>
+        কোনো সমস্যা হলে আমাদের সাথে যোগাযোগ করুন।
+      </p>
+
+      <a href="#" class="btn">যোগাযোগ করুন</a>
     </div>
 
   </div>
 
   <footer>
-    <p>© 2026 My Digital Services. All Rights Reserved.</p>
+    © 2026 My Digital Services
   </footer>
 
 </body>
